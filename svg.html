@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Analog Clock</title>
+    <script>
+        function updateTime() { // Atualiza o elemento gráfico relógio SVG para mostrar a hora atual 
+            let now = new Date(); //Hora atual 
+            let second = now.getSeconds()
+            let min = now.getMinutes(); //Minutos 
+            let hour = (now.getHours() % 12) + min / 60; // Horas fracionárias
+            //angles
+            let secondangle = second * 6;
+            let minangle = min * 6;
+            let hourangle = hour * 30;
+            let secondhand = document.getElementById("secondhand");
+            let minhand = document.getElementById("minutehand");
+            let hourhand = document.getElementById("hourhand");
+            //Configura um atributo SVG neles para movê - los em torno do mostrador do relógio 
+            secondhand.setAttribute("transform", `rotate(${secondangle}, 50, 50)`)
+            minhand.setAttribute("transform", `rotate(${minangle}, 50, 50)`);
+            hourhand.setAttribute("transform", `rotate(${hourangle}, 50, 50)`);
+            // Atualiza o relógio novamente em 1 minuto s
+            setTimeout(updateTime, 1000);
+        } </script>
+</head>
+
+<body onload="updateTime()">
+    <div id="secondhand"  transform="rotate(90, 50, 50)">Texto text</div>
+</body>
+
+</html>

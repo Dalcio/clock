@@ -1,0 +1,52 @@
+#clock {
+  /* estilos para tudo no relógio */
+  stroke: #0069d9;
+  /* linhas pretas */
+  stroke-linecap: round;
+  /* com extremidades arredondadas */
+  /**/
+  fill: transparent;
+  /* sobre um fundo cinza azul-celeste */
+  margin-left: calc(50% - 200px);
+  margin-top: calc(50vh - 238px);
+}
+
+#face {
+  stroke-width: 2px;
+}
+
+/* contorno do mostrador do relógio */
+
+#ticks {
+  stroke-width: 2px;
+}
+
+/* linhas que marcam cada hora */
+
+#hourhand {
+  stroke-width: 3px;
+}
+
+/* ponteiro grande dos minutos */
+
+#minutehand {
+  stroke-width: 2px;
+}
+
+/* ponteiro grande dos segundos */
+
+#secondhand {
+  stroke-width: 1px;
+}
+
+/* ponteiro pequeno dos minutos */
+
+#numbers {
+  /* como desenhar os números */
+  font-family: sans-serif;
+  font-size: 6pt;
+  font-weight: bold;
+  text-anchor: middle;
+  stroke: none;
+  fill: #0069d9;
+}
