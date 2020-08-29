@@ -1,4 +1,4 @@
-## See the project](https://github.com/Dalcio/clock)
+## [See the project](https://github.com/Dalcio/clock)
 
 https://github.com/Dalcio/clock
 
