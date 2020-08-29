@@ -1,3 +1,7 @@
+## See the project](https://github.com/Dalcio/clock)
+
+https://github.com/Dalcio/clock
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
